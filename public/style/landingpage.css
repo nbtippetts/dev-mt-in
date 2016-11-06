@@ -1,0 +1,12 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid gray;
+  margin-top: 10px;
+}
+
+.header button {
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,30 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer {
+    position: relative;
+}
+.navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid gray;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.navbar .container ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: x-large;
+}

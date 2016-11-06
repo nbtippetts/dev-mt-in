@@ -1,0 +1,57 @@
+
+<div class="header">
+  <img src="./images/icons/search.svg" alt="search Icon" height="50px" width="50px" />
+  <div><h1>DevMountain</h1></div>
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
+  	style="background:url('./images/icons/ham.svg'); background-size: contain; background-repeat: no-repeat; width:50px;height:50px">
+    <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+      <li><a ui-sref="landingpage" data-toggle="modal" data-target="#login-modal">Login</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+		  <div class="loginmodal-container">
+					<h1>Login to Your Account</h1><br>
+				  <form>
+            <div class="login">
+  					<input id="name" type="text" ng-model="user.name" placeholder="User Name">>
+  					<input id="password" type="password" ng-model="user.password" placeholder="Password">
+            <button ui-sref="landingpage" ng-click="createUser(newUser)">Login</button>
+				  </form>
+
+				  <div class="login-help">
+					  <a href="#">Register</a> - <a href="#">Forgot Password</a>
+				  </div>
+        </div>
+		  </div>
+	 </div>
+</div>
+
+<div class="wrapper">
+    <div class="create-user">
+       <form>
+         <p>Welcome to <span style="color: #00FFE9">DevMountain Social.</span> Add Some Info So Friends Can Find you</p>
+          <input class="name" type="text" ng-model="user.name" placeholder="FullName">
+          <br />
+          <input class="tagline" type="text" ng-model="user.tagline" placeholder="Tagline">
+          <br />
+          <input class="picture" type="url" ng-model="image" placeholder="Place Picture Url">
+          <br />
+          <textarea class="input" cols="40" rows="10" type="text" ng-model="user.bio" placeholder="bio"></textarea>
+          <button ng-click="createUser(user)">Login</button>
+       </form>
+    </div>
+
+
+   <div class="user-image">
+     <div id="canvas">
+       <img src="./images/download (1).png" alt=""/>
+    </div>
+  </div>
+</div>
